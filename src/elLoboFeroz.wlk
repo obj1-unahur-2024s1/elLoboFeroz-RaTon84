@@ -23,10 +23,16 @@ object caperucita {
 	const manzana = 0.2;
 	var canasta = 6;
 	
-	method pesoTotal(){return peso + canasta * manzana}
+	method pesoTotal(){
+		return peso + canasta * manzana
+	}
 	
 	method restarManzanas(cantidad){
 		canasta -= cantidad;
+	}	
+	
+	method sumarManzanas(cantidad){
+		canasta += cantidad;
 	}	
 }
 
