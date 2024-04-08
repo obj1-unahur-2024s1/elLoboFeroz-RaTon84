@@ -67,8 +67,8 @@ object casaMadera{
 }
 
 object casaLadrillo{
-	method resistecia(ladrillo){
-		return 2 * ladrillo;
+	method resistecia(ladrillos){
+		return 2 * ladrillos;
 	}
 }
 
