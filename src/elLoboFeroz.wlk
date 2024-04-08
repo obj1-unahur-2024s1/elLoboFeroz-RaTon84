@@ -13,8 +13,8 @@ object loboFeroz {
 		peso = 10;
 	}
 	
-	method soplarCasa(resistencia){		
-		peso -= resistencia;
+	method soplarCasa(tipo){		
+		peso -= tipo;
 	}
 }
 
@@ -47,3 +47,29 @@ object cazador {
 	
 	method peso(){return peso}	
 }
+
+object chanchito{
+	const peso = 30;
+	
+	method peso(){return peso}
+}
+
+object casaPaja {
+	method resistecia(){
+		return 0;
+	}
+}
+
+object casaMadera{
+	method resistecia(){
+		return 5;
+	}
+}
+
+object casaLadrillo{
+	method resistecia(ladrillo){
+		return 2 * ladrillo;
+	}
+}
+
+
