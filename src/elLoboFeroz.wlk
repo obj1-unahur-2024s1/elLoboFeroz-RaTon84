@@ -9,7 +9,7 @@ object loboFeroz {
 		peso -= 1;
 	}
 	
-	method crisis(){
+	method sufrirCrisis(){
 		peso = 10;
 	}
 	
