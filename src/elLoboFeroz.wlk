@@ -1,56 +1,46 @@
 object loboFeroz {
-	var peso = 10;
-	
+	var peso = 10;	
 	method Comer(cantidad){
 		peso += cantidad * 0.1;
-	}
-	
+	}	
 	method Correr(){
 		peso -= 1;
-	}
-	
+	}	
 	method sufrirCrisis(){
 		peso = 10;
-	}
-	
-	method soplarCasa(tipo){		
-		peso -= tipo;
+	}	
+	method soplarCasa(tipoDeCasa,nroChanchitos){		
+		peso -= tipoDeCasa.resistencia() + nroChanchitos * chanchito.peso();
 	}
 }
 
 object caperucita {
 	const peso = 60;
 	const manzana = 0.2;
-	var canasta = 6;
-	
+	var canasta = 6;	
 	method pesoTotal(){
 		return peso + canasta * manzana
-	}
-	
+	}	
 	method restarManzanas(cantidad){
 		canasta -= cantidad;
-	}	
-	
+	}		
 	method sumarManzanas(cantidad){
 		canasta += cantidad;
 	}	
 }
 
 object abuelita {
-	const peso = 50;
-	
+	const peso = 50;	
 	method peso(){return peso}
 }
 
 object cazador {
-	const peso = 80;
-	
+	const peso = 80;	
 	method peso(){return peso}	
 }
 
 object chanchito{
-	const peso = 30;
-	
+	const peso = 30;	
 	method peso(){return peso}
 }
 
@@ -71,5 +61,3 @@ object casaLadrillo{
 		return 2 * ladrillos;
 	}
 }
-
-
